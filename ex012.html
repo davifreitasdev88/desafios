@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style type="tex/css">
+    </style>
+    <link rel="stylesheet" type="text/css" href="formatform1.css">
+</head>
+<body>
+    <header>
+        
+        <h1>Formulário de Satisfação de Compra</h1>
+        <p>Preencha todos os campos abaixo respectivamente</p>
+    </header>
+
+    <nav>
+
+        <a href="https:www.ig.com.br" rel="external" target="_blank">www.ig.com.br</a>
+        <a href="https:www.uol.com.br" rel="external" target="_blank">www.uol.com.br</a>
+        <a href="https:www.globo.com.br" rel="external" target="_blank">www.globo.com.br</a>
+        <a href="https:www.terra.com.br" rel="external" target="_blank">www.terra.com.br</a>
+
+
+    </nav>
+
+    <br>
+
+    <aside>
+
+        <ol>
+
+            <li>Volkswagem</li>
+            <li>Chevrolet</li>
+            <li>Mitsubishi</li>
+            <li>Toyota</li>
+            <li>Buick</li>
+            <li>Cadillac</li>
+            <li>Masserati</li>
+            <li>Lamborguini</li>
+
+        </ol>
+
+    </aside>
+
+
+<fieldset>
+    <legend>Dados01</legend>
+    <form name="pesq" action="#" method="post">
+
+        <label>Informe o seu nome</label>
+        <input type="text" name="nome" size="40" maxlength="30">
+
+
+        <label>O nome do mercantil mais perto de sua casa</label>
+        <input type="text" name="end" size="30">
+
+        <label>Informe um número de contato</label>
+        <input type="tel" name="numero" size="20">
+
+        <label>Com que frequência você vai as compras</label>
+
+    <div id="d1">
+        <input type="radio" name="seg" value="seg">Segunda
+        <input type="radio" name="ter" value="ter">Terça
+        <input type="radio" name="quar" value="quar">Quarta
+        <input type="radio" name="qui" value="qui">Quinta
+        <input type="radio" name="sex" value="sex">Sexta   
+    </div>
+
+        <label>Qual distância do mercantil até sua casa</label>
+    
+    <div id="d2">
+        <input type="checkbox" name="5km">Até 5 Km
+        <input type="checkbox" name="10km">10 Km
+        <input type="checkbox" name="15km">15 Km
+        <input type="checkbox" name="20km">Acima de 20 Km
+    </div>
+
+        <label>Qual o grau de satisfação em relação ao mercantil que você frequenta</label>
+        <input list="lista" name="lista">
+        <datalist id="lista">
+
+            <option value="ruim">Ruim</option>
+            <option value="media">Mediano</option>
+            <option value="bom">Bom</option>
+            <option value="otimo">Ótimo</option>
+            <option value="excelente">Excelente</option>
+
+        </datalist>
+
+        <label>Em relação a economia enumere de 0 à 5</label>
+        <p>0 à 5</p>
+        <input type="number" name="cont1" min="1" max="5">
+        
+        <label>Em relação a higiene e a limpeza do lugar</label>
+        <p>0 à 5</p>
+        <input type="number" name="cont2" min="1" max="5" required>
+
+        <label>Em relação as ofertas disponíveis</label>
+
+    <div id="d3">
+      
+        <input type="checkbox" name="1">1
+        <input type="checkbox" name="2">2
+        <input type="checkbox" name="2">3
+        <input type="checkbox" name="2">4
+        <input type="checkbox" name="2">5
+    </div>
+
+    <br>
+    
+    <label>Escolha os Canais Disponíveis</label>
+    <select>
+        <optgroup label="Esportes">
+            <option>BandSports</option>
+            <option>FoxSports</option>
+            <option>Sporttv</option>
+            <option>Espn</option>
+            <option>Prime</option>
+        </optgroup>
+        <optgroup label="Entretenimento">
+            <option>Discovery</option>
+            <option>History</option>
+            <option>WarnerBros</option>
+            <option>Telecine</option>
+            <option>Fox</option>
+
+        </optgroup>
+
+
+    </select>
+
+    </form>
+</fieldset>
+    
+    <br>
+    <br>
+
+    <form oninput="res.value=parseInt(a.value)+parseInt(b.value)"> 
+
+    <label>Informe o seu grau de satisfação de 0 à 10 no campo abaixo</label>
+    <input type="range" id="a" value="50">0 à 100
+    
+    <p>+</p>
+
+    <input type="range" id="b" value="0">0 à 100
+    
+    <p>=</p>
+
+    <output name="res" for="a b"></output>
+
+
+    </form>
+
+</body>
+</html>

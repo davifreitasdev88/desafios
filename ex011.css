@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+html{
+    scroll-behavior:smooth;
+}
+.icon{
+    width:50px;
+    list-style:none;
+}
+.menu{
+    top:0px;
+    left:0px;
+    width:120px;
+    position:fixed;
+    background-color:rgba(212, 102, 167, 0.644);
+}
+.menu a{
+    text-align: center;
+    display:block;
+    padding:15px;
+    transition: all 0.5 ease;
+
+}
+.menu a:hover{
+    background-color:rgba(29, 112, 190, 0.548);
+}
+.stilo{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center center;
+}
+.p1{
+    background-image:url('nba.png');
+}
